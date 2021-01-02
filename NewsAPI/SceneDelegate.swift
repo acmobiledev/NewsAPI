@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,6 +19,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: scene as! UIWindowScene)
+        self.window = window
+        
+        let newsTableVC = NewsTableViewController()
+        let navigationController = UINavigationController(rootViewController: newsTableVC)
+        navigationController.navigationBar.barTintColor = UIColor.flatPurpleColorDark()
+        navigationController.setStatusBarStyle(UIStatusBarStyleContrast)
+        
+        let navLabel = UILabel()
+        
+        let attributedTitle = NSMutableAttributedString(string: "News", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 20.0), NSAttributedString.Key.foregroundColor : UIColor.systemBlue])
+        attributedTitle.append(NSMutableAttributedString(string: "API", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 20.0), NSAttributedString.Key.foregroundColor : UIColor.white]))
+        
+        navLabel.attributedText = attributedTitle
+        navigationController.navigationBar.topItem?.titleView = navLabel
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
