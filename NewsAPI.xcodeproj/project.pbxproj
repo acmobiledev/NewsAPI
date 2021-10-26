@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		DAD59C842572563F006A847D /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD59C832572563F006A847D /* NewsTableViewCell.swift */; };
 		DAD59C872572594A006A847D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD59C862572594A006A847D /* UIView.swift */; };
 		DAD5F43B257792900049CFB9 /* SwiftDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F439257792900049CFB9 /* SwiftDataModel.xcdatamodeld */; };
+		DAFBC31D2728690200F292A4 /* Test.md in Resources */ = {isa = PBXBuildFile; fileRef = DAFBC31C2728690200F292A4 /* Test.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DAD59C832572563F006A847D /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		DAD59C862572594A006A847D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		DAD5F43A257792900049CFB9 /* SwiftDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftDataModel.xcdatamodel; sourceTree = "<group>"; };
+		DAFBC31C2728690200F292A4 /* Test.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Test.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,6 @@
 				A5F5A1BA661D3B4AA81D2BAB /* Pods-NewsAPI.debug.xcconfig */,
 				B05092D23F38C61E3F7D4C0D /* Pods-NewsAPI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,6 +117,7 @@
 				DA541F8025701C9F0070D4D4 /* Assets.xcassets */,
 				DA541F8225701C9F0070D4D4 /* LaunchScreen.storyboard */,
 				DA541F8525701C9F0070D4D4 /* Info.plist */,
+				DAFBC31C2728690200F292A4 /* Test.md */,
 			);
 			path = NewsAPI;
 			sourceTree = "<group>";
@@ -207,6 +209,7 @@
 			files = (
 				DA541F8425701C9F0070D4D4 /* LaunchScreen.storyboard in Resources */,
 				DA541F8125701C9F0070D4D4 /* Assets.xcassets in Resources */,
+				DAFBC31D2728690200F292A4 /* Test.md in Resources */,
 				DA541F7F25701C9B0070D4D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
